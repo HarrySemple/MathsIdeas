@@ -12,45 +12,90 @@
   </docinfo>
 
   <book xml:id="my-great-book">
-    <title>My Great Book</title>
-    <subtitle>An example to get you started</subtitle>
+    <title>Highlights</title>
+    <subtitle>Maths I've Found Interesting</subtitle>
 
     <frontmatter xml:id="frontmatter">
       <titlepage>
         <author>
-          <personname>You</personname>
-          <department>Your department</department>
-          <institution>Your institution</institution>
+          <personname>Harry Semple</personname>
+          <department>4th Year MMath</department>
+          <institution>University of Bath</institution>
         </author>
         <date>
           <today />
         </date>
       </titlepage>
 
-      <colophon>
+      <preface>
+        <p>
+          I am an MMath student at the University of Bath interested in PDE's, Machine Learning, Mathematical Biology and Scientific Computing. 
+          This webpage is dedicated to satisfying results I've come across - both in and outside of my degree. 
+        </p>
 
-        <website>
-          <name>
-            <c>example.org</c>
-          </name>
-          <address>https://example.org</address>
-        </website>
-
-        <copyright>
-          <year>2020<ndash />2023</year>
-          <holder>You</holder>
-          <shortlicense> 
-            This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
-          </shortlicense>
-        </copyright>
-      </colophon>
+      </preface>
     </frontmatter>
 
-    <chapter xml:id="chapter-title">
-      <title>Chapter title</title>
+    <chapter xml:id="a-level">
+      <title>A-Level</title>
+      <introduction>
+        <p>
+          These are topics that are more accessible to sixth-form students
+        </p>
+      </introduction>
 
-      <section xml:id="section-title">
-        <title>Section title</title>
+      <section xml:id="special-1">
+        <title>Special Relativity: Time Dialiation</title>
+        <p>Hello</p>
+      </section>
+
+      <section xml:id="special-2">
+        <title>Special Relativity: Length Contraction</title>
+        <p>Hello</p>
+      </section>
+
+      <section xml:id="normal-1">
+        <title>The Normal Distribution</title>
+        <p>Hello</p>
+      </section>
+
+    </chapter>
+    
+    <chapter xml:id="numerical">
+      <title>Numerical Analysis</title>
+
+      <section xml:id="interpolation">
+        <title>Interpolation Rules</title>
+        <p>Hello</p>
+      </section>
+
+      <section xml:id="normal-2">
+        <title>Estimating The Normal Distribution</title>
+        <p>Hello</p>
+      </section>
+
+    </chapter>
+
+    <chapter xml:id="mult-calc">
+      <title>Multivariate Calculus and PDE's</title>
+
+      <section xml:id="key-results">
+        <title>Key Results</title>
+        <p>Hello</p>
+      </section>
+
+      <section xml:id="math-bio-1">
+        <title>Uses In Mathematical Biology</title>
+        <p>Hello</p>
+      </section>
+
+      <section xml:id="theory-pdes">
+        <title>Theory of PDE's</title>
+        <p>Hello</p>
+      </section>
+
+      <section xml:id="num-pdes">
+        <title>Numerical Solutions of PDE's</title>
         <p>Hello</p>
       </section>
 
@@ -61,6 +106,14 @@
 
       <colophon>
         <p> This book was authored in <pretext />. </p>
+
+        <copyright>
+          <year>2023<ndash />2024</year>
+          <holder>Harry Semple</holder>
+          <shortlicense> 
+            This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
+          </shortlicense>
+        </copyright>
       </colophon>
 
     </backmatter>
