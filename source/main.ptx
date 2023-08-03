@@ -33,6 +33,10 @@
           This webpage is dedicated to satisfying results I've come across - both in and outside of my degree. 
         </p>
 
+        <figure xml:id="swan">
+          <caption>Website author with a <url href="https://en.wikipedia.org/wiki/Swan" visual="en.wikipedia.org/wiki/Swan">swan</url></caption>
+          <image source="main/swan.jpg" width="100%" />
+        </figure>
       </preface>
     </frontmatter>
 
