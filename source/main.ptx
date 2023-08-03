@@ -35,7 +35,7 @@
 
         <figure xml:id="swan">
           <caption>Website author with a <url href="https://en.wikipedia.org/wiki/Swan" visual="en.wikipedia.org/wiki/Swan">swan</url></caption>
-          <image source="swan.jpg" width="30%" />
+          <image source="images/swan.jpg" width="30%" />
         </figure>
       </preface>
     </frontmatter>
