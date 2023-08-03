@@ -33,9 +33,9 @@
           This webpage is dedicated to satisfying results I've come across - both in and outside of my degree. 
         </p>
 
-        <figure xml:id="swan">
+        <figure>
           <caption>Website author with a <url href="https://en.wikipedia.org/wiki/Swan">swan</url></caption>
-          <image source="images/swan.jpg" width="30%" />
+          <image source="/workspaces/MathsIdeas/source/images/swan.jpg" width="30%" />
         </figure>
       </preface>
     </frontmatter>
