@@ -30,12 +30,12 @@
       <preface>
         <p>
           I am an MMath student at the University of Bath interested in PDE's, Machine Learning, Mathematical Biology and Scientific Computing. 
-          This webpage is dedicated to satisfying results I've come across - both in and outside of my degree. 
+          This webpage is dedicated to satisfying results I've come across - both in and outside of my degree.
         </p>
 
         <figure>
-          <caption>Website author with a <url href="https://en.wikipedia.org/wiki/Swan">swan</url></caption>
-          <image source="images/swan" width="30%" />
+          <caption>Website author with a german <url href="https://en.wikipedia.org/wiki/Swan">swan</url></caption>
+          <image source="swan.jpg" width="30%" />
         </figure>
       </preface>
     </frontmatter>
@@ -60,7 +60,14 @@
 
       <section xml:id="normal-1">
         <title>The Normal Distribution</title>
-        <p>Hello</p>
+        <image source="ND1.jpg" width="90%">
+        </image>
+        <image source="ND2.jpg" width="90%">
+        </image>
+        <image source="ND3.jpg" width="90%">
+        </image>
+        <image source="ND4.jpg" width="90%">
+        </image>
       </section>
 
     </chapter>
