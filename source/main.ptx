@@ -87,13 +87,11 @@
       <title>Numerical Analysis</title>
 
       <section xml:id="interpolation">
-        <title>Interpolation Rules</title>
-        <p>Hello</p>
+        <title>**Interpolation Rules</title>
       </section>
 
       <section xml:id="normal-2">
-        <title>Estimating The Normal Distribution</title>
-        <p>Hello</p>
+        <title>**Estimating The Normal Distribution</title>
       </section>
 
     </chapter>
@@ -102,23 +100,19 @@
       <title>Multivariate Calculus and PDE's</title>
 
       <section xml:id="key-results">
-        <title>Key Results</title>
-        <p>Hello</p>
+        <title>**Key Results</title>
       </section>
 
       <section xml:id="math-bio-1">
-        <title>Uses In Mathematical Biology</title>
-        <p>Hello</p>
+        <title>**Uses In Mathematical Biology</title>
       </section>
 
       <section xml:id="theory-pdes">
-        <title>Theory of PDE's</title>
-        <p>Hello</p>
+        <title>**Theory of PDE's</title>
       </section>
 
       <section xml:id="num-pdes">
-        <title>Numerical Solutions of PDE's</title>
-        <p>Hello</p>
+        <title>**Numerical Solutions of PDE's</title>
       </section>
 
     </chapter>
