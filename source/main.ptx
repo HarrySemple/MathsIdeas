@@ -50,7 +50,8 @@
 
       <section xml:id="special-1">
         <title>Special Relativity: Time Dialiation</title>
-        <p>Hello</p>
+        <image source="SP1.jpg" width="90%">
+        </image>
       </section>
 
       <section xml:id="special-2">
@@ -70,6 +71,11 @@
         </image>
       </section>
 
+      <section xml:id="guass">
+        <title>More Uses of the Guassian Integral</title>
+        <image source="GI1.jpg" width="90%">
+        </image>
+      </section>
     </chapter>
     
     <chapter xml:id="numerical">
@@ -114,6 +120,14 @@
 
     <backmatter xml:id="backmatter">
       <title>Backmatter</title>
+
+      <section xml:id="misc-1">
+        <title>Miscellaneous</title>
+        <image source="M1.jpg" width="90%">
+        </image>
+        <image source="M2.jpg" width="90%">
+        </image>
+      </section>
 
       <colophon>
         <p> This book was authored in <pretext />. </p>
