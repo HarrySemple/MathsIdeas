@@ -7,7 +7,7 @@ var ptx_lunr_docs = [
   "type": "Preface",
   "number": "",
   "title": "Preface",
-  "body": " I am an MMath student at the University of Bath interested in PDE's, Machine Learning, Mathematical Biology and Scientific Computing. This webpage is dedicated to satisfying results I've come across - both in and outside of my degree.   Website author with a german swan    "
+  "body": " I am an MMath student at the University of Bath interested in PDE's, Machine Learning, Mathematical Biology and Scientific Computing. This webpage is dedicated to satisfying results I've come across - both in and outside of my degree.  As of August 2023, much of this is still to be typeset and most topics have scanned placeholders until I get good at PreTeXt.   Website author with a german swan    "
 },
 {
   "id": "figure-1",
@@ -19,11 +19,20 @@ var ptx_lunr_docs = [
   "body": " Website author with a german swan   "
 },
 {
+  "id": "arc-length",
+  "level": "1",
+  "url": "arc-length.html",
+  "type": "Section",
+  "number": "1.1",
+  "title": "Arc Length",
+  "body": " Arc Length    "
+},
+{
   "id": "normal-1",
   "level": "1",
   "url": "normal-1.html",
   "type": "Section",
-  "number": "1.1",
+  "number": "1.2",
   "title": "The Normal Distribution",
   "body": " The Normal Distribution          "
 },
@@ -32,7 +41,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "guass.html",
   "type": "Section",
-  "number": "1.2",
+  "number": "1.3",
   "title": "More Uses of the Guassian Integral",
   "body": " More Uses of the Guassian Integral    "
 },
@@ -41,7 +50,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "special-1.html",
   "type": "Section",
-  "number": "1.3",
+  "number": "1.4",
   "title": "Special Relativity",
   "body": " Special Relativity    "
 },
