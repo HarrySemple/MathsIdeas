@@ -60,8 +60,8 @@ var ptx_lunr_docs = [
   "url": "interpolation.html",
   "type": "Section",
   "number": "2.1",
-  "title": "Interpolation Rules",
-  "body": " Interpolation Rules  Hello  "
+  "title": "**Interpolation Rules",
+  "body": " **Interpolation Rules  "
 },
 {
   "id": "normal-2",
@@ -69,8 +69,8 @@ var ptx_lunr_docs = [
   "url": "normal-2.html",
   "type": "Section",
   "number": "2.2",
-  "title": "Estimating The Normal Distribution",
-  "body": " Estimating The Normal Distribution  Hello  "
+  "title": "**Estimating The Normal Distribution",
+  "body": " **Estimating The Normal Distribution  "
 },
 {
   "id": "key-results",
@@ -78,8 +78,8 @@ var ptx_lunr_docs = [
   "url": "key-results.html",
   "type": "Section",
   "number": "3.1",
-  "title": "Key Results",
-  "body": " Key Results  Hello  "
+  "title": "**Key Results",
+  "body": " **Key Results  "
 },
 {
   "id": "math-bio-1",
@@ -87,8 +87,8 @@ var ptx_lunr_docs = [
   "url": "math-bio-1.html",
   "type": "Section",
   "number": "3.2",
-  "title": "Uses In Mathematical Biology",
-  "body": " Uses In Mathematical Biology  Hello  "
+  "title": "**Uses In Mathematical Biology",
+  "body": " **Uses In Mathematical Biology  "
 },
 {
   "id": "theory-pdes",
@@ -96,8 +96,8 @@ var ptx_lunr_docs = [
   "url": "theory-pdes.html",
   "type": "Section",
   "number": "3.3",
-  "title": "Theory of PDE’s",
-  "body": " Theory of PDE's  Hello  "
+  "title": "**Theory of PDE’s",
+  "body": " **Theory of PDE's  "
 },
 {
   "id": "num-pdes",
@@ -105,8 +105,8 @@ var ptx_lunr_docs = [
   "url": "num-pdes.html",
   "type": "Section",
   "number": "3.4",
-  "title": "Numerical Solutions of PDE’s",
-  "body": " Numerical Solutions of PDE's  Hello  "
+  "title": "**Numerical Solutions of PDE’s",
+  "body": " **Numerical Solutions of PDE's  "
 },
 {
   "id": "misc-1",
