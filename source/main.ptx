@@ -51,6 +51,12 @@
         </p>
       </introduction>
 
+      <section xml:id="arc-length">
+        <title>Arc Length</title>
+        <image source="AL1.jpg" width="90%">
+        </image>
+      </section>
+
 
       <section xml:id="normal-1">
         <title>The Normal Distribution</title>
