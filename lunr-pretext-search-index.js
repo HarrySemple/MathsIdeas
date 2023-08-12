@@ -109,13 +109,31 @@ var ptx_lunr_docs = [
   "body": " **Numerical Solutions of PDE's  "
 },
 {
-  "id": "misc-1",
+  "id": "subsec-Natural-Logorithm",
   "level": "1",
-  "url": "misc-1.html",
-  "type": "Section",
-  "number": "1",
-  "title": "Miscellaneous",
-  "body": " Miscellaneous      "
+  "url": "subsec-Natural-Logorithm.html",
+  "type": "Subsection",
+  "number": "1.1",
+  "title": "Natural Logorithm",
+  "body": " Natural Logorithm    "
+},
+{
+  "id": "subsec-Irrational-Indices",
+  "level": "1",
+  "url": "subsec-Irrational-Indices.html",
+  "type": "Subsection",
+  "number": "1.2",
+  "title": "Irrational Indices",
+  "body": " Irrational Indices    "
+},
+{
+  "id": "subsec-Fourier-Series",
+  "level": "1",
+  "url": "subsec-Fourier-Series.html",
+  "type": "Subsection",
+  "number": "1.3",
+  "title": "Fourier Series",
+  "body": " Fourier Series          "
 },
 {
   "id": "colophon-1",
