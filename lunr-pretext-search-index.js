@@ -7,7 +7,7 @@ var ptx_lunr_docs = [
   "type": "Preface",
   "number": "",
   "title": "Preface",
-  "body": " I am an MMath student at the University of Bath interested in PDE's, Machine Learning, Mathematical Biology and Scientific Computing. This webpage is dedicated to satisfying results I've come across - both in and outside of my degree.  As of August 2023, much of this is still to be typeset and most topics have scanned placeholders until I get good at PreTeXt.   Website author with a german swan    "
+  "body": " I am an MMath student at the University of Bath interested in PDE's, Machine Learning, Mathematical Biology and Scientific Computing. This webpage is dedicated to satisfying results I've come across - both in and outside of my degree.  As of August 2023, much of this is still to be typeset; most topics have scanned placeholders until I get good at PreTeXt.   Website author with a german swan    "
 },
 {
   "id": "figure-1",
