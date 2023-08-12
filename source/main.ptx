@@ -38,7 +38,7 @@
 
         <figure>
           <caption>Website author with a german <url href="https://en.wikipedia.org/wiki/Swan">swan</url></caption>
-          <image source="swan.jpg" width="30%" />
+          <image source="swan2.jpg" width="60%" />
         </figure>
       </preface>
     </frontmatter>
@@ -122,10 +122,27 @@
 
       <section xml:id="misc-1">
         <title>Miscellaneous</title>
-        <image source="M1.jpg" width="90%">
-        </image>
-        <image source="M2.jpg" width="90%">
-        </image>
+        <subsection xml:id="subsec-Natural-Logorithm">
+          <title>Natural Logorithm</title>
+          <image source="M1.jpg" width="90%">
+          </image>
+        </subsection>
+        <subsection xml:id="subsec-Irrational-Indices">
+          <title>Irrational Indices</title>
+          <image source="M2.jpg" width="90%">
+          </image>
+        </subsection>
+        <subsection xml:id="subsec-Fourier-Series">
+          <title>Fourier Series</title>
+          <image source="F1.jpg" width="90%">
+          </image>
+          <image source="F2.jpg" width="90%">
+          </image>
+          <image source="F3.jpg" width="90%">
+          </image>
+          <image source="F4.jpg" width="90%">
+          </image>
+        </subsection>
       </section>
 
       <colophon>
