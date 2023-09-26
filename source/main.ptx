@@ -5,6 +5,7 @@
   <docinfo>
     <macros>
       \newcommand{\R}{\mathbb R}
+      \newcommand\myatop[2]{{{#1}\atop#2}} 
     </macros>
     <latex-image-preamble>
       \usepackage{tikz}
@@ -105,6 +106,48 @@
 
       <section xml:id="math-bio-1">
         <title>**Uses In Mathematical Biology</title>
+        <subsection xml:id="subsec-mb1">
+          <title>Derivation of the Conservation Equation</title>
+          <p>
+            Consider the conservation of particles in an arbitrary volume <m>V</m>, enclosed by a surface <m>S</m>, within a smooth domain <m>\Omega</m>. By the law of conservation, we have that:
+            <men>
+              \myatop{\text{Particles in }V}{\text{@ }t+\delta t} = \myatop{\text{Particles in }V}{\text{@ }t} + \myatop{\text{Net particles}}{\text{entering }V} + \myatop{\text{Net particles}}{\text{created in }V}
+            </men>
+            Now set
+            <md>
+              <mrow>u(x,t) =\amp\text{ Density of particles} </mrow>
+              <mrow>f(x,t) =\amp\text{ Rate of change of particle density from sinks/sources} </mrow>
+              <mrow>J(x,t) =\amp\text{ Flux of particles} </mrow>
+            </md>
+            By (1), we have
+            <me>
+              \int_{V}u(x,t+\delta t)dV = \int_{V}u(x,t)dV - \delta t\int_{S}J(x,t)\cdot dS + \delta t\int_{V}f(x,t)dV
+            </me>
+            Applying the divergence theorem and rearranging gives us
+            <me>
+              \int_{V}\frac{u(x,t+\delta t)-u(x,t)}{\delta t}+\nabla\cdot J(x,t)-f(x,t)dV=0
+            </me>
+            As <m>V</m> is an arbitrary volume within <m>\Omega</m>, we have that the integrand itself is zero. In addition, <m>\delta t</m> is arbitrary and is now sent to zero, giving us:
+            <men xml:id="eqn-conservation">
+              \frac{\partial u}{\partial t} + \nabla\cdot J-f=0
+            </men>
+            The Conservation Equation.
+          </p>
+        </subsection>
+        <subsection xml:id="subsec-mb2">
+          <title>Advective and Diffusive Flux</title>
+          <p>
+            In the context of biological models, we can often split <m>J</m> into two components:
+            <me>
+              J = J_\text{adv}+J_\text{diff}
+            </me>
+            Where 
+            <md>
+              <mrow> J_\text{adv}\amp=u(x,t)v(x,t) </mrow>
+              <mrow> J_\text{diff}\amp=-D\nabla u(x,t) </mrow>
+            </md>
+          </p>
+        </subsection>
       </section>
 
       <section xml:id="theory-pdes">
