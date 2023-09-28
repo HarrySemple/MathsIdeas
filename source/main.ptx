@@ -144,10 +144,32 @@
             Where 
             <md>
               <mrow> J_\text{adv}\amp=u(x,t)v(x,t) </mrow>
+              <mrow> \text{i.e. particles @ }(x,t)\amp\text{ are moved along a vector }v\text{ due to some} </mrow>
+              <mrow>  \text{advection property in the}\amp\text{ system - such as active trasport within a cell} </mrow>
+              <mrow> \amp </mrow>
               <mrow> J_\text{diff}\amp=-D\nabla u(x,t) </mrow>
+              <mrow> \text{i.e. by Fick's Law, particles}\amp\text{ move down their concentration gradient}</mrow>
             </md>
+            Thus, the Advection-Diffusion Equation is given by:
+            <men xml:id="eqn-adv-diff">
+              \frac{\partial u}{\partial t}=-\nabla\cdot (vu)+\nabla\cdot (D\nabla u) + f
+            </men>
           </p>
+          <subsection xml:id="subsec-taxis">
+            <title>Taxis Terms for the Flux</title>
+            <p>
+              Now we model movement in response to an external cue - such as light, tempreture, chemicals or another population. 
+              This results in an advective flux specified by:
+              <me>
+                J=\chi u\nabla c
+              </me>
+              Where <m>c=</m> concentration of the external cue.
+            </p>
+          </subsection>
         </subsection>
+      </section>
+      <section xml:id="sec-ml">
+        <title>Deep Learning</title>
       </section>
 
       <section xml:id="theory-pdes">
