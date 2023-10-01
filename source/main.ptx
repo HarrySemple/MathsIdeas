@@ -110,7 +110,7 @@
           <title>Derivation of the Conservation Equation</title>
           <p>
             Consider the conservation of particles in an arbitrary volume <m>V</m>, enclosed by a surface <m>S</m>, within a smooth domain <m>\Omega</m>. By the law of conservation, we have that:
-            <men>
+            <men xml:id="eqn-pre-conservation">
               \myatop{\text{Particles in }V}{\text{@ }t+\delta t} = \myatop{\text{Particles in }V}{\text{@ }t} + \myatop{\text{Net particles}}{\text{entering }V} + \myatop{\text{Net particles}}{\text{created in }V}
             </men>
             Now set
@@ -119,7 +119,7 @@
               <mrow>f(x,t) =\amp\text{ Rate of change of particle density from sinks/sources} </mrow>
               <mrow>J(x,t) =\amp\text{ Flux of particles} </mrow>
             </md>
-            By <xref ref="eqn-conservation" text="(3.2.1)"/>, we have
+            By <xref ref="eqn-pre-conservation"/>, we have
             <me>
               \int_{V}u(x,t+\delta t)dV = \int_{V}u(x,t)dV - \delta t\int_{S}J(x,t)\cdot dS + \delta t\int_{V}f(x,t)dV
             </me>
