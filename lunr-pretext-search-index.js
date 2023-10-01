@@ -88,14 +88,23 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.2",
   "title": "**Uses In Mathematical Biology",
-  "body": " **Uses In Mathematical Biology  "
+  "body": " **Uses In Mathematical Biology   Derivation of the Conservation Equation  Consider the conservation of particles in an arbitrary volume , enclosed by a surface , within a smooth domain . By the law of conservation, we have that: Now set By (1), we have Applying the divergence theorem and rearranging gives us As is an arbitrary volume within , we have that the integrand itself is zero. In addition, is arbitrary and is now sent to zero, giving us: The Conservation Equation.    Advective and Diffusive Flux  In the context of biological models, we can often split into two components: Where Thus, the Advection-Diffusion Equation is given by:    Taxis Terms for the Flux  Now we model movement in response to an external cue - such as light, tempreture, chemicals or another population. This results in an advective flux specified by: Where concentration of the external cue.    "
+},
+{
+  "id": "sec-ml",
+  "level": "1",
+  "url": "sec-ml.html",
+  "type": "Section",
+  "number": "3.3",
+  "title": "Deep Learning",
+  "body": " Deep Learning  "
 },
 {
   "id": "theory-pdes",
   "level": "1",
   "url": "theory-pdes.html",
   "type": "Section",
-  "number": "3.3",
+  "number": "3.4",
   "title": "**Theory of PDE’s",
   "body": " **Theory of PDE's  "
 },
@@ -104,7 +113,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "num-pdes.html",
   "type": "Section",
-  "number": "3.4",
+  "number": "3.5",
   "title": "**Numerical Solutions of PDE’s",
   "body": " **Numerical Solutions of PDE's  "
 },

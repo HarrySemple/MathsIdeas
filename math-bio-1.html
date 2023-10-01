@@ -202,9 +202,10 @@ window.MathJax = {
 <span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
 </ol>
 </li>
-</ol></div></button><span class="treebuttons"><a class="previous-button button" href="key-results.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="mult-calc.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="theory-pdes.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="key-results.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="mult-calc.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="sec-ml.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
 <input id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" class="searchbutton" type="button" onclick="doSearch()">🔍</button>
 </div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\R}{\mathbb R}
+\newcommand\myatop[2]{{{#1}\atop#2}}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -237,9 +238,19 @@ window.MathJax = {
 <div class="toc-item"><a href="mult-calc.html" class="internal"><span class="codenumber">3</span> <span class="title">Multivariate Calculus and PDE’s</span></a></div>
 <ul class="structural">
 <li><div class="toc-item"><a href="key-results.html" class="internal"><span class="codenumber">3.1</span> <span class="title">**Key Results</span></a></div></li>
-<li class="active"><div class="toc-item"><a href="math-bio-1.html" class="internal"><span class="codenumber">3.2</span> <span class="title">**Uses In Mathematical Biology</span></a></div></li>
-<li><div class="toc-item"><a href="theory-pdes.html" class="internal"><span class="codenumber">3.3</span> <span class="title">**Theory of PDE’s</span></a></div></li>
-<li><div class="toc-item"><a href="num-pdes.html" class="internal"><span class="codenumber">3.4</span> <span class="title">**Numerical Solutions of PDE’s</span></a></div></li>
+<li class="active">
+<div class="toc-item"><a href="math-bio-1.html" class="internal"><span class="codenumber">3.2</span> <span class="title">**Uses In Mathematical Biology</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="math-bio-1.html#subsec-mb1" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Derivation of the Conservation Equation</span></a></div></li>
+<li>
+<div class="toc-item"><a href="math-bio-1.html#subsec-mb2" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Advective and Diffusive Flux</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="math-bio-1.html#subsec-taxis" class="internal"><span class="codenumber">3.2.2.1</span> <span class="title">Taxis Terms for the Flux</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="sec-ml.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Deep Learning</span></a></div></li>
+<li><div class="toc-item"><a href="theory-pdes.html" class="internal"><span class="codenumber">3.4</span> <span class="title">**Theory of PDE’s</span></a></div></li>
+<li><div class="toc-item"><a href="num-pdes.html" class="internal"><span class="codenumber">3.5</span> <span class="title">**Numerical Solutions of PDE’s</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -259,9 +270,86 @@ window.MathJax = {
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="math-bio-1"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">3.2</span> <span class="title">**Uses In Mathematical Biology</span>
-</h2></section></div>
+</h2>
+<section class="subsection" id="subsec-mb1"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.2.1</span> <span class="title">Derivation of the Conservation Equation</span>
+</h3>
+<div class="para logical" id="p-4">
+<div class="para">Consider the conservation of particles in an arbitrary volume <span class="process-math">\(V\text{,}\)</span> enclosed by a surface <span class="process-math">\(S\text{,}\)</span> within a smooth domain <span class="process-math">\(\Omega\text{.}\)</span> By the law of conservation, we have that:</div>
+<div class="displaymath process-math" id="men-1">
+\begin{equation}
+\myatop{\text{Particles in }V}{\text{@ }t+\delta t} = \myatop{\text{Particles in }V}{\text{@ }t} + \myatop{\text{Net particles}}{\text{entering }V} + \myatop{\text{Net particles}}{\text{created in }V}\tag{3.2.1}
+\end{equation}
+</div>
+<div class="para">Now set</div>
+<div class="displaymath process-math" id="md-1">
+\begin{align*}
+u(x,t) =\amp\text{ Density of particles} \\
+f(x,t) =\amp\text{ Rate of change of particle density from sinks/sources} \\
+J(x,t) =\amp\text{ Flux of particles} 
+\end{align*}
+</div>
+<div class="para">By (1), we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{V}u(x,t+\delta t)dV = \int_{V}u(x,t)dV - \delta t\int_{S}J(x,t)\cdot dS + \delta t\int_{V}f(x,t)dV
+\end{equation*}
+</div>
+<div class="para">Applying the divergence theorem and rearranging gives us</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{V}\frac{u(x,t+\delta t)-u(x,t)}{\delta t}+\nabla\cdot J(x,t)-f(x,t)dV=0
+\end{equation*}
+</div>
+<div class="para">As <span class="process-math">\(V\)</span> is an arbitrary volume within <span class="process-math">\(\Omega\text{,}\)</span> we have that the integrand itself is zero. In addition, <span class="process-math">\(\delta t\)</span> is arbitrary and is now sent to zero, giving us:</div>
+<div class="displaymath process-math" id="eqn-conservation">
+\begin{equation}
+\frac{\partial u}{\partial t} + \nabla\cdot J-f=0\tag{3.2.2}
+\end{equation}
+</div>
+<div class="para">The Conservation Equation.</div>
+</div></section><section class="subsection" id="subsec-mb2"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.2.2</span> <span class="title">Advective and Diffusive Flux</span>
+</h3>
+<div class="para logical" id="p-5">
+<div class="para">In the context of biological models, we can often split <span class="process-math">\(J\)</span> into two components:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+J = J_\text{adv}+J_\text{diff}
+\end{equation*}
+</div>
+<div class="para">Where</div>
+<div class="displaymath process-math" id="md-2">
+\begin{align*}
+J_\text{adv}\amp=u(x,t)v(x,t) \\
+\text{i.e. particles @ }(x,t)\amp\text{ are moved along a vector }v\text{ due to some} \\
+\text{advection property in the}\amp\text{ system - such as active trasport within a cell} \\
+\amp \\
+J_\text{diff}\amp=-D\nabla u(x,t) \\
+\text{i.e. by Fick's Law, particles}\amp\text{ move down their concentration gradient}
+\end{align*}
+</div>
+<div class="para">Thus, the Advection-Diffusion Equation is given by:</div>
+<div class="displaymath process-math" id="eqn-adv-diff">
+\begin{equation}
+\frac{\partial u}{\partial t}=-\nabla\cdot (vu)+\nabla\cdot (D\nabla u) + f\tag{3.2.3}
+\end{equation}
+</div>
+</div>
+<section class="subsection" id="subsec-taxis"><h4 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.2.2.1</span> <span class="title">Taxis Terms for the Flux</span>
+</h4>
+<div class="para logical" id="p-6">
+<div class="para">Now we model movement in response to an external cue - such as light, tempreture, chemicals or another population. This results in an advective flux specified by:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+J=\chi u\nabla c
+\end{equation*}
+</div>
+<div class="para">Where <span class="process-math">\(c=\)</span> concentration of the external cue.</div>
+</div></section></section></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="key-results.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="theory-pdes.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
+<a class="previous-button button" href="key-results.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec-ml.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
