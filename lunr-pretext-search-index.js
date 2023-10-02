@@ -55,11 +55,29 @@ var ptx_lunr_docs = [
   "body": " Special Relativity    "
 },
 {
+  "id": "sec-eig",
+  "level": "1",
+  "url": "sec-eig.html",
+  "type": "Section",
+  "number": "2.1",
+  "title": "Eigenvalues and Eigenvectors",
+  "body": " Eigenvalues and Eigenvectors    Given a matrix ,     "
+},
+{
+  "id": "def-eigenvalue",
+  "level": "2",
+  "url": "sec-eig.html#def-eigenvalue",
+  "type": "Definition",
+  "number": "2.1.1",
+  "title": "",
+  "body": "  Given a matrix ,    "
+},
+{
   "id": "interpolation",
   "level": "1",
   "url": "interpolation.html",
   "type": "Section",
-  "number": "2.1",
+  "number": "3.1",
   "title": "**Interpolation Rules",
   "body": " **Interpolation Rules  "
 },
@@ -68,7 +86,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "normal-2.html",
   "type": "Section",
-  "number": "2.2",
+  "number": "3.2",
   "title": "**Estimating The Normal Distribution",
   "body": " **Estimating The Normal Distribution  "
 },
@@ -77,7 +95,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "key-results.html",
   "type": "Section",
-  "number": "3.1",
+  "number": "4.1",
   "title": "**Key Results",
   "body": " **Key Results  "
 },
@@ -86,16 +104,16 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "math-bio-1.html",
   "type": "Section",
-  "number": "3.2",
-  "title": "**Uses In Mathematical Biology",
-  "body": " **Uses In Mathematical Biology   Derivation of the Conservation Equation  Consider the conservation of particles in an arbitrary volume , enclosed by a surface , within a smooth domain . By the law of conservation, we have that: Now set By , we have Applying the divergence theorem and rearranging gives us As is an arbitrary volume within , we have that the integrand itself is zero. In addition, is arbitrary and is now sent to zero, giving us: The Conservation Equation.    Advective and Diffusive Flux  In the context of biological models, we can often split into two components: Where Thus, the Advection-Diffusion Equation is given by:    Taxis Terms for the Flux  Now we model movement in response to an external cue - such as light, tempreture, chemicals or another population. This results in an advective flux specified by: Where concentration of the external cue.    "
+  "number": "4.2",
+  "title": "Uses In Mathematical Biology",
+  "body": " Uses In Mathematical Biology   Derivation of the Conservation Equation  Consider the conservation of particles in an arbitrary volume , enclosed by a surface , within a smooth domain . By the law of conservation, we have that: Now set By , we have Applying the divergence theorem and rearranging gives us As is an arbitrary volume within , we have that the integrand itself is zero. In addition, is arbitrary and is now sent to zero, giving us: The Conservation Equation.    Advective and Diffusive Flux  In the context of biological models, we can often split into two components: Where Thus, the Advection-Diffusion Equation is given by:    Taxis Terms for the Flux  Now we model movement in response to an external cue - such as light, tempreture, chemicals or another population. This results in an advective flux specified by: Where concentration of the external cue.    "
 },
 {
   "id": "sec-ml",
   "level": "1",
   "url": "sec-ml.html",
   "type": "Section",
-  "number": "3.3",
+  "number": "4.3",
   "title": "Deep Learning",
   "body": " Deep Learning  "
 },
@@ -104,7 +122,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "theory-pdes.html",
   "type": "Section",
-  "number": "3.4",
+  "number": "4.4",
   "title": "**Theory of PDE’s",
   "body": " **Theory of PDE's  "
 },
@@ -113,9 +131,54 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "num-pdes.html",
   "type": "Section",
-  "number": "3.5",
+  "number": "4.5",
   "title": "**Numerical Solutions of PDE’s",
   "body": " **Numerical Solutions of PDE's  "
+},
+{
+  "id": "sec-ml-intro",
+  "level": "1",
+  "url": "sec-ml-intro.html",
+  "type": "Section",
+  "number": "5.1",
+  "title": "Introduction",
+  "body": " Introduction    The sigmoid function is given by      It can be easily checked that    "
+},
+{
+  "id": "def-sigmoid",
+  "level": "2",
+  "url": "sec-ml-intro.html#def-sigmoid",
+  "type": "Definition",
+  "number": "5.1.1",
+  "title": "",
+  "body": "  The sigmoid function is given by    "
+},
+{
+  "id": "remark-1",
+  "level": "2",
+  "url": "sec-ml-intro.html#remark-1",
+  "type": "Remark",
+  "number": "5.1.2",
+  "title": "",
+  "body": " It can be easily checked that   "
+},
+{
+  "id": "sec-stochastic",
+  "level": "1",
+  "url": "sec-stochastic.html",
+  "type": "Section",
+  "number": "5.2",
+  "title": "**Stochastic Gradient",
+  "body": " **Stochastic Gradient  "
+},
+{
+  "id": "sec-auto-diff",
+  "level": "1",
+  "url": "sec-auto-diff.html",
+  "type": "Section",
+  "number": "5.3",
+  "title": "**Automatic Differentiation",
+  "body": " **Automatic Differentiation  "
 },
 {
   "id": "subsec-Natural-Logorithm",
