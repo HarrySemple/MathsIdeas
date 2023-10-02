@@ -83,6 +83,25 @@
         </image>
       </section>
     </chapter>
+
+    <chapter xml:id="ch-lin-alg">
+      <title>Linear Algebra</title>
+      <section xml:id="sec-eig">
+        <title>Eigenvalues and Eigenvectors</title>
+        <definition xml:id="def-eigenvalue">
+          <statement>
+            <p>
+              Given a matrix <m>A\in\mathbb{R}^{N\times N}</m>,
+              <md>
+                <mrow> \lambda\in\mathbb{C}\text{ is an eigenvalue of }<m>A</m>\amp\iff\exists v\in\mathbb{R}^N \text{ s.t. } Av = \lambda v </mrow>
+                <mrow> v\in\mathbb{R}^N\text{ is an eigenvector of }<m>A</m>\amp\iff\exists \lambda\in\mathbb{C} \text{ s.t. } Av = \lambda v </mrow>
+              </md>
+            </p>
+          </statement>
+        </definition>
+      </section>
+      
+    </chapter>
     
     <chapter xml:id="numerical">
       <title>Numerical Analysis</title>
@@ -105,7 +124,7 @@
       </section>
 
       <section xml:id="math-bio-1">
-        <title>**Uses In Mathematical Biology</title>
+        <title>Uses In Mathematical Biology</title>
         <subsection xml:id="subsec-mb1">
           <title>Derivation of the Conservation Equation</title>
           <p>
@@ -180,6 +199,33 @@
         <title>**Numerical Solutions of PDE's</title>
       </section>
 
+    </chapter>
+
+    <chapter xml:id="ch-ml">
+      <title>**Machine Learning</title>
+      <section xml:id="sec-ml-intro">
+        <title>Introduction</title>
+        <definition xml:id="def-sigmoid">
+          <statement>
+            <p>
+              The sigmoid function is given by <m>\sigma (x)=\frac{1}{1+e^{-x}}</m>
+            </p>
+          </statement>
+        </definition>
+        <remark>
+          <p>
+            It can be easily checked that <m>\sigma '(x) = \sigma(x)(1-\sigma(x))</m>
+          </p>
+        </remark>
+      </section>
+      <section xml:id="sec-stochastic">
+        <title>**Stochastic Gradient</title>
+        
+      </section>
+      <section xml:id="sec-auto-diff">
+        <title>**Automatic Differentiation</title>
+        
+      </section>
     </chapter>
 
     <backmatter xml:id="backmatter">
