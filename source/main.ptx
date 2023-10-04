@@ -83,25 +83,6 @@
         </image>
       </section>
     </chapter>
-
-    <chapter xml:id="ch-lin-alg">
-      <title>Linear Algebra</title>
-      <section xml:id="sec-eig">
-        <title>Eigenvalues and Eigenvectors</title>
-        <definition xml:id="def-eigenvalue">
-          <statement>
-            <p>
-              Given a matrix <m>A\in\mathbb{R}^{N\times N}</m>,
-              <md>
-                <mrow> \lambda\in\mathbb{C}\text{ is an eigenvalue of }<m>A</m>\amp\iff\exists v\in\mathbb{R}^N \text{ s.t. } Av = \lambda v </mrow>
-                <mrow> v\in\mathbb{R}^N\text{ is an eigenvector of }<m>A</m>\amp\iff\exists \lambda\in\mathbb{C} \text{ s.t. } Av = \lambda v </mrow>
-              </md>
-            </p>
-          </statement>
-        </definition>
-      </section>
-      
-    </chapter>
     
     <chapter xml:id="numerical">
       <title>Numerical Analysis</title>
@@ -114,6 +95,28 @@
         <title>**Estimating The Normal Distribution</title>
       </section>
 
+    </chapter>
+
+    <chapter xml:id="ch-lin-alg">
+      <title>Linear Algebra and ODE's</title>
+      <section xml:id="sec-eig">
+        <title>Eigenvalues and Eigenvectors</title>
+        <definition xml:id="def-eigenvalue">
+          <statement>
+            <p>
+              Given a matrix <m>A\in\mathbb{R}^{N\times N}</m>,
+              <md>
+                <mrow> \lambda\in\mathbb{C}\text{ is an eigenvalue of }A\amp\iff\exists v\in\mathbb{R}^N \text{ s.t. } Av = \lambda v </mrow>
+                <mrow> v\in\mathbb{R}^N\text{ is an eigenvector of }A\amp\iff\exists \lambda\in\mathbb{C} \text{ s.t. } Av = \lambda v </mrow>
+              </md>
+            </p>
+          </statement>
+        </definition>
+      </section>
+      <section xml:id="sec-Eigenfunctions">
+        <title>**Eigenfunctions</title>
+        
+      </section>
     </chapter>
 
     <chapter xml:id="mult-calc">
@@ -187,28 +190,25 @@
           </subsection>
         </subsection>
       </section>
-      <section xml:id="sec-ml">
-        <title>Deep Learning</title>
-      </section>
 
       <section xml:id="theory-pdes">
         <title>**Theory of PDE's</title>
       </section>
 
       <section xml:id="num-pdes">
-        <title>**Numerical Solutions of PDE's</title>
+        <title>**Numerical Solutions of Elliptic PDE's</title>
       </section>
 
     </chapter>
 
     <chapter xml:id="ch-ml">
-      <title>**Machine Learning</title>
+      <title>Deep Learning</title>
       <section xml:id="sec-ml-intro">
         <title>Introduction</title>
         <definition xml:id="def-sigmoid">
           <statement>
             <p>
-              The sigmoid function is given by <m>\sigma (x)=\frac{1}{1+e^{-x}}</m>
+              The sigmoid function is a common activation function, given by <m>\sigma (x)=\frac{1}{1+e^{-x}}</m>
             </p>
           </statement>
         </definition>
