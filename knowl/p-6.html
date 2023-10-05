@@ -11,32 +11,19 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
+<h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">In the context of biological models, we can often split <span class="process-math">\(J\)</span> into two components:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-J = J_\text{adv}+J_\text{diff}
-\end{equation*}
-</div>
-<div class="para">Where</div>
+<div class="para">It follows from the definition of the Gamma Function that</div>
 <div class="displaymath process-math">
 \begin{align*}
-J_\text{adv}\amp=u(x,t)v(x,t) \\
-\text{i.e. particles @ }(x,t)\amp\text{ are moved along a vector }v\text{ due to some} \\
-\text{advection property in the}\amp\text{ system - such as active trasport within a cell} \\
-\amp \\
-J_\text{diff}\amp=-D\nabla u(x,t) \\
-\text{i.e. by Fick's Law, particles}\amp\text{ move down their concentration gradient}
+\Gamma(t+1)\amp=\int_0^\infty x^t e^{-x}\\
+\amp=\big[-x^t e^{-x}\big]_0^\infty+\int_0^\infty tx^{t-1}e^{-x}dx\\
+\amp=t\Gamma(t) \\
+\text{thus, we have that} \\
+\Rightarrow\Gamma(t)\amp=(t-1)\Gamma(t-1)=\cdots=(t-1)!\Gamma(1)
 \end{align*}
 </div>
-<div class="para">Thus, the Advection-Diffusion Equation is given by:</div>
-<div class="displaymath process-math">
-\begin{equation}
-\frac{\partial u}{\partial t}=-\nabla\cdot (vu)+\nabla\cdot (D\nabla u) + f\tag{4.2.3}
-\end{equation}
 </div>
-</div>
-<span class="incontext"><a href="math-bio-1.html#p-6" class="internal">in-context</a></span>
+<span class="incontext"><a href="guass.html#p-6" class="internal">in-context</a></span>
 </body>
 </html>

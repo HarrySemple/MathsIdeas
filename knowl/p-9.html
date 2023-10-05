@@ -12,8 +12,31 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">It can be easily checked that <span class="process-math">\(\sigma '(x) = \sigma(x)(1-\sigma(x))\)</span>
+<div class="para logical">
+<div class="para">In the context of biological models, we can often split <span class="process-math">\(J\)</span> into two components:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+J = J_\text{adv}+J_\text{diff}
+\end{equation*}
 </div>
-<span class="incontext"><a href="sec-ml-intro.html#p-9" class="internal">in-context</a></span>
+<div class="para">Where</div>
+<div class="displaymath process-math">
+\begin{align*}
+J_\text{adv}\amp=u(x,t)v(x,t) \\
+\text{i.e. particles @ }(x,t)\amp\text{ are moved along a vector }v\text{ due to some} \\
+\text{advection property in the}\amp\text{ system - such as active trasport within a cell} \\
+\amp \\
+J_\text{diff}\amp=-D\nabla u(x,t) \\
+\text{i.e. by Fick's Law, particles}\amp\text{ move down their concentration gradient}
+\end{align*}
+</div>
+<div class="para">Thus, the Advection-Diffusion Equation is given by:</div>
+<div class="displaymath process-math">
+\begin{equation}
+\frac{\partial u}{\partial t}=-\nabla\cdot (vu)+\nabla\cdot (D\nabla u) + f\tag{4.2.3}
+\end{equation}
+</div>
+</div>
+<span class="incontext"><a href="math-bio-1.html#p-9" class="internal">in-context</a></span>
 </body>
 </html>
