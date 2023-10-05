@@ -73,6 +73,35 @@
 
       <section xml:id="guass">
         <title>More Uses of the Guassian Integral</title>
+        <definition>
+          <p>
+            The Gamma Function is given by:
+            <me>
+              \Gamma (t)=\int^\infty_0 x^{t-1}e^{-x}dx
+            </me>
+          </p>
+        </definition>
+        <claim>
+          <p>
+            <m>\big(-\frac{1}{2}\big)!=\sqrt \pi</m>
+          </p>
+        </claim>
+        <proof>
+          <p>
+            It follows from the definition of the Gamma Function that
+            <md>
+              <mrow>\Gamma(t+1)\amp=\int_0^\infty x^t e^{-x}</mrow>
+              <mrow> \amp=\big[-x^t e^{-x}\big]_0^\infty+\int_0^\infty tx^{t-1}e^{-x}dx</mrow>
+              <mrow> \amp=t\Gamma(t) </mrow>
+              <mrow>\text{Thus, we have that} </mrow>
+              <mrow>\Gamma(t)\amp=(t-1)\Gamma(t-1)=\cdots=(t-1)!\Gamma(1)</mrow>
+              <mrow>\text{where} </mrow>
+              <mrow> \Gamma(1)\amp=\int_0^\infty x^0e^{-x}dx</mrow>
+              <mrow> \amp=\big[-e^{-x}\big]_o&\infty=1 </mrow>
+            </md>
+
+          </p>
+        </proof>
         <image source="GI1.jpg" width="90%">
         </image>
       </section>
