@@ -93,17 +93,30 @@
               <mrow>\Gamma(t+1)\amp=\int_0^\infty x^t e^{-x}</mrow>
               <mrow> \amp=\big[-x^t e^{-x}\big]_0^\infty+\int_0^\infty tx^{t-1}e^{-x}dx</mrow>
               <mrow> \amp=t\Gamma(t) </mrow>
-              <mrow>\text{Thus, we have that} </mrow>
+              <mrow>\text{Thus, we have that}</mrow>
+            <!--</md>
+            Thus, we have that
+            <md>-->
               <mrow>\Gamma(t)\amp=(t-1)\Gamma(t-1)=\cdots=(t-1)!\Gamma(1)</mrow>
-              <mrow>\text{where} </mrow>
+            <!--</md>
+            Where
+            <md>-->
+              <mrow>\text{Where}</mrow>
               <mrow> \Gamma(1)\amp=\int_0^\infty x^0e^{-x}dx</mrow>
-              <mrow> \amp=\big[-e^{-x}\big]_o&\infty=1 </mrow>
+              <mrow> \amp=\big[-e^{-x}\big]_0^\infty=1 </mrow>
+              <mrow> \amp </mrow>
+              <mrow> \Rightarrow\Gamma(t)\amp=(t-1)!</mrow>
+              <mrow> \amp </mrow>
+              <mrow> \Rightarrow \big(-\frac{1}{2}\big)!\amp=\Gamma\big(\frac{1}{2}\big) </mrow>
+              <mrow> \amp=\int_0^\infty x^{1/2}e^{-x}dx</mrow>
+              <mrow> \amp=2\int_0^\infty e^{-x^2}dx</mrow>
+              <mrow> \amp=\int_{-\infty}^\infty e^{-x^2}dx = \sqrt\pi</mrow>
             </md>
 
           </p>
         </proof>
-        <image source="GI1.jpg" width="90%">
-        </image>
+        <!--<image source="GI1.jpg" width="90%">
+        </image>-->
       </section>
 
       <section xml:id="special-1">
@@ -237,7 +250,13 @@
         <definition xml:id="def-sigmoid">
           <statement>
             <p>
-              The sigmoid function is a common activation function, given by <m>\sigma (x)=\frac{1}{1+e^{-x}}</m>
+              A common activation function is the sigmoid function, given by 
+              <me>\sigma (x)=\frac{1}{1+e^{-x}}</me>
+              for <m>x\in\mathbb{R}</m>.
+            </p>
+            <p>
+              In future, this will be applied to vectors component-wise. That is, for <m>z\in\mathbb{R}^n</m>
+              <me>\sigma(z)_i=\sigma(z_i)</me>.
             </p>
           </statement>
         </definition>
@@ -246,10 +265,72 @@
             It can be easily checked that <m>\sigma '(x) = \sigma(x)(1-\sigma(x))</m>
           </p>
         </remark>
+        <p>
+          Now we set up layers of neurons. Each neuron computes a single real number and passes it to every neuron in the next layer.
+          In turn, each new neuron performs its own weighted combination of these values, adds its own bias and applies the sigmoid function.
+          This is illustrated by
+          <me>\myatop{a}{\text{Previous output}} \myatop{\longrightarrow}{} \myatop{\sigma(Wa+b)}{\text{Next output}}</me>
+          <md>
+            <mrow>a\amp \longrightarrow\amp \amp\sigma(Wa + b)</mrow>
+            <mrow>\text{Previous }\amp \text{output} \amp \amp \text{Next output} </mrow>
+          </md>
+          Where <m>a,b\in \mathbb{R}^{\text{prev. #neurons}}</m> and <m>W\in\mathbb{R}^{\text{next #neurons }\times\text{ prev. #neurons}}</m>.
+          
+        </p>
+        <remark>
+          <p>
+            The <m>i^\text{th}</m> next neuron outputs <m>\sigma(\sum_j w_{ij}a_j+b_i)</m>
+          </p>
+        </remark>
+        <subsection xml:id="subsec-ml1">
+          <title>General Setup</title>
+          <p>
+            'Deep learning' refers to the use of hidden layers between the input and output layers.
+            For a network of <m>L</m> layers, <m>1\text{ and }L</m> are the respective input, output layers.
+            Each layer <m>l\in\{ 1, \dots, L\}</m> contains <m>n_l</m> neurons. 
+            Thus, the netwrok maps <m>\mathbb{R}^{n_1}\rightarrow\mathbb{R}^{n_L}</m>.
+            <md>
+              <mrow>W^{[l]} \amp\in\mathbb{R}^{n_l\times n_{l-1}} </mrow>
+              <mrow>a^{[l]},b^{[l]} \amp\in\mathbb{R}^{n_l} </mrow>
+            </md>
+            Where
+            <md>
+              <mrow>a^{[1]} \amp=x </mrow>
+              <mrow>a^{[l]} \amp=\sigma(W^{[l]}a^{[l-1]} + b^{[l]}) </mrow>
+            </md>
+            For <m>N</m> training datapoints,
+            <me>
+              \text{Cost } = \frac{1}{N}\sum_{i=1}^N \frac{1}{2} ||y(x^{\{i\}})-a^{[L]}(x^{\{i\}})||_2^2
+            </me>
+            
+          </p>
+        </subsection>
       </section>
       <section xml:id="sec-stochastic">
-        <title>**Stochastic Gradient</title>
-        
+        <title>Stochastic Gradient</title>
+        <p>
+          Building a network corresponds to choosing parameters (of <m>W^{[l]}</m> and <m>b^{[l]}</m>) that minimise the the cost function.
+          Taking <m>s</m> to be the number of parameters, we store these variables in a single vector <m>p\in\mathbb{R}^s</m>. 
+        </p>
+        <p>
+          By a taylor series expansion, we have
+          <md>
+            <mrow>\text{Cost}(p+\Delta p) \amp\approx \text{Cost}(p)+\sum_{r=1}^s\frac{\partial\text{Cost}(p)}{\partial p_r}\Delta p_r </mrow>
+            <mrow> \amp=\text{Cost}(p) + \nabla\text{Cost}(p)^T\Delta p </mrow>
+          </md> 
+          Which motivates us to make <m>\nabla\text{Cost}(p)^T\Delta p </m> as negative as possible. Cauchy-Schwarz tells us that <m>|f^Tg|\leq||f||_2||g||_2</m>,
+          so this happens when <m>f^Tg = -||f||_2||g||_2 \iff f = -\lambda g</m>. 
+          Thus, we choose <m>\Delta p = -\eta\nabla\text{Cost}(p)</m>
+          and update accoringly:
+          <me>
+            p\longrightarrow p-\eta\nabla\text{Cost}(p)
+          </me>
+          Iterating this update forms the basis of gradient descent, with <m>\eta</m> as the learning rate. 
+        </p>
+        <remark>
+            
+        </remark>
+
       </section>
       <section xml:id="sec-auto-diff">
         <title>**Automatic Differentiation</title>
