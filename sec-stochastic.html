@@ -267,7 +267,7 @@ window.MathJax = {
 <ul class="structural"><li><div class="toc-item"><a href="sec-ml-intro.html#subsec-ml1" class="internal"><span class="codenumber">5.1.1</span> <span class="title">General Setup</span></a></div></li></ul>
 </li>
 <li class="active"><div class="toc-item"><a href="sec-stochastic.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Stochastic Gradient</span></a></div></li>
-<li><div class="toc-item"><a href="sec-auto-diff.html" class="internal"><span class="codenumber">5.3</span> <span class="title">**Automatic Differentiation</span></a></div></li>
+<li><div class="toc-item"><a href="sec-auto-diff.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Automatic Differentiation</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -313,7 +313,7 @@ p\longrightarrow p-\eta\nabla\text{Cost}(p)
 <div class="para">Computing <span class="process-math">\(\nabla\text{Cost}(p)\)</span> is expensive. It is formulated as:</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\nabla\text{Cost}(p)=\frac{1}{N}\sum_{i=1}^N\nabla C_{x^\{i\}}(p)
+\nabla\text{Cost}(p)=\frac{1}{N}\sum_{i=1}^N\nabla C_{x^{\{i\}}}(p)
 \end{equation*}
 </div>
 <div class="para">Where</div>
@@ -323,9 +323,12 @@ C_{x^\{i\}}(p) = \frac{1}{2}||y(x^{\{i\}})-a^{[L]}(x^{\{i\}})||_2^2
 \end{equation*}
 </div>
 </div></article><article class="algorithm theorem-like" id="alg-sto-grad"><h3 class="heading">
-<span class="type">Algorithm</span><span class="space"> </span><span class="codenumber">5.2.2</span><span class="period">.</span>
+<span class="type">Algorithm</span><span class="space"> </span><span class="codenumber">5.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Stochastic Gradient.</span>
 </h3>
-<div class="para" id="p-20">The Stochastic Gradient Algorithm</div></article></section></div>
+<div class="para logical" id="p-20"><pre class="code-display tex2jax_ignore">Set p_0\in\mathbb{R}, k=0
+For \tau=0,\dots,n [epochs] or \text{Cost}(p_k) no longer reduced
+\cdots
+</pre></div></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-ml-intro.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec-auto-diff.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

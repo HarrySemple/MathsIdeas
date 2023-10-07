@@ -205,7 +205,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.2",
   "title": "Stochastic Gradient",
-  "body": " Stochastic Gradient  Building a network corresponds to choosing parameters (of and ) that minimise the the cost function. Taking to be the number of parameters, we store these variables in a single vector .  By a taylor series expansion, we have Which motivates us to make as negative as possible. Cauchy-Schwarz tells us that , so this happens when . Thus, we choose and update accoringly: Iterating this update forms the basis of gradient descent, with as the learning rate.   Computing is expensive. It is formulated as: Where      The Stochastic Gradient Algorithm    "
+  "body": " Stochastic Gradient  Building a network corresponds to choosing parameters (of and ) that minimise the the cost function. Taking to be the number of parameters, we store these variables in a single vector .  By a taylor series expansion, we have Which motivates us to make as negative as possible. Cauchy-Schwarz tells us that , so this happens when . Thus, we choose and update accoringly: Iterating this update forms the basis of gradient descent, with as the learning rate.   Computing is expensive. It is formulated as: Where     Stochastic Gradient     Set  For [epochs] or no longer reduced       "
 },
 {
   "id": "remark-3",
@@ -222,8 +222,8 @@ var ptx_lunr_docs = [
   "url": "sec-stochastic.html#alg-sto-grad",
   "type": "Algorithm",
   "number": "5.2.2",
-  "title": "",
-  "body": "  The Stochastic Gradient Algorithm   "
+  "title": "Stochastic Gradient.",
+  "body": " Stochastic Gradient     Set  For [epochs] or no longer reduced      "
 },
 {
   "id": "sec-auto-diff",
@@ -231,8 +231,26 @@ var ptx_lunr_docs = [
   "url": "sec-auto-diff.html",
   "type": "Section",
   "number": "5.3",
-  "title": "**Automatic Differentiation",
-  "body": " **Automatic Differentiation  "
+  "title": "Automatic Differentiation",
+  "body": " Automatic Differentiation  Now we focus on computing partials of the cost function. We fix and treat as a function of weights and biases.         Thus, and is thought of as the weighed input of neuron in layer     We have the following results:     "
+},
+{
+  "id": "def-ad1",
+  "level": "2",
+  "url": "sec-auto-diff.html#def-ad1",
+  "type": "Definition",
+  "number": "5.3.1",
+  "title": "",
+  "body": "      "
+},
+{
+  "id": "lem-ad2",
+  "level": "2",
+  "url": "sec-auto-diff.html#lem-ad2",
+  "type": "Lemma",
+  "number": "5.3.2",
+  "title": "",
+  "body": "  We have the following results:    "
 },
 {
   "id": "subsec-Natural-Logorithm",

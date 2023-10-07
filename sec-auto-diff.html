@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>**Automatic Differentiation</title>
+<title>Automatic Differentiation</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -267,7 +267,7 @@ window.MathJax = {
 <ul class="structural"><li><div class="toc-item"><a href="sec-ml-intro.html#subsec-ml1" class="internal"><span class="codenumber">5.1.1</span> <span class="title">General Setup</span></a></div></li></ul>
 </li>
 <li><div class="toc-item"><a href="sec-stochastic.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Stochastic Gradient</span></a></div></li>
-<li class="active"><div class="toc-item"><a href="sec-auto-diff.html" class="internal"><span class="codenumber">5.3</span> <span class="title">**Automatic Differentiation</span></a></div></li>
+<li class="active"><div class="toc-item"><a href="sec-auto-diff.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Automatic Differentiation</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -286,8 +286,31 @@ window.MathJax = {
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-auto-diff"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">5.3</span> <span class="title">**Automatic Differentiation</span>
-</h2></section></div>
+<span class="type">Section</span> <span class="codenumber">5.3</span> <span class="title">Automatic Differentiation</span>
+</h2>
+<div class="para" id="p-21">Now we focus on computing partials of the cost function. We fix <span class="process-math">\(x^{\{i\}}\)</span> and treat <span class="process-math">\(C\)</span> as a function of weights and biases.</div>
+<article class="definition definition-like" id="def-ad1"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.3.1</span><span class="period">.</span>
+</h3>
+<div class="para logical" id="p-22"><div class="displaymath process-math" id="md-9">
+\begin{align*}
+C =\amp ||y-a^{[L]}||_2^2\\
+z^{[l]}:=\amp W^{[l]}a^{[l-1]}+b^{[l]}\\
+\delta^{[l]}\in\amp\mathbb{R}\text{ s.t. }\delta_j^{[l]}=\frac{\partial C}{\partial z_j^{[l]}}
+\end{align*}
+</div></div></article><div class="para" id="p-23">Thus, <span class="process-math">\(a^{[l]}=\sigma(z^{[l]})\)</span> and <span class="process-math">\(z^{[l]}\)</span> is thought of as the weighed input of neuron <span class="process-math">\(j\)</span> in layer <span class="process-math">\(l\)</span>
+</div>
+<article class="lemma theorem-like" id="lem-ad2"><h3 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">5.3.2</span><span class="period">.</span>
+</h3>
+<div class="para logical" id="p-24">
+<div class="para">We have the following results:</div>
+<div class="displaymath process-math" id="mdn-1">
+\begin{align}
+\amp \tag{5.3.1}
+\end{align}
+</div>
+</div></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-stochastic.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>
