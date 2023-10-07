@@ -205,7 +205,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.2",
   "title": "Stochastic Gradient",
-  "body": " Stochastic Gradient  Building a network corresponds to choosing parameters (of and ) that minimise the the cost function. Taking to be the number of parameters, we store these variables in a single vector .  By a taylor series expansion, we have Which motivates us to make as negative as possible. Cauchy-Schwarz tells us that , so this happens when . Thus, we choose and update accoringly: Iterating this update forms the basis of gradient descent, with as the learning rate.   Computing is expensive. It is formulated as:      The Stochastic Gradient Algorithm    "
+  "body": " Stochastic Gradient  Building a network corresponds to choosing parameters (of and ) that minimise the the cost function. Taking to be the number of parameters, we store these variables in a single vector .  By a taylor series expansion, we have Which motivates us to make as negative as possible. Cauchy-Schwarz tells us that , so this happens when . Thus, we choose and update accoringly: Iterating this update forms the basis of gradient descent, with as the learning rate.   Computing is expensive. It is formulated as: Where      The Stochastic Gradient Algorithm    "
 },
 {
   "id": "remark-3",
@@ -214,7 +214,7 @@ var ptx_lunr_docs = [
   "type": "Remark",
   "number": "5.2.1",
   "title": "",
-  "body": " Computing is expensive. It is formulated as:   "
+  "body": " Computing is expensive. It is formulated as: Where   "
 },
 {
   "id": "alg-sto-grad",
