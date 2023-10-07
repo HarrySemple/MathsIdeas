@@ -43,7 +43,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.3",
   "title": "More Uses of the Guassian Integral",
-  "body": " More Uses of the Guassian Integral   The Gamma Function is given by:          It follows from the definition of the Gamma Function that      "
+  "body": " More Uses of the Guassian Integral   The Gamma Function is given by:          It follows from the definition of the Gamma Function that     "
 },
 {
   "id": "definition-1",
@@ -169,7 +169,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.1",
   "title": "Introduction",
-  "body": " Introduction    The sigmoid function is a common activation function, given by      It can be easily checked that    "
+  "body": " Introduction    A common activation function is the sigmoid function, given by for .  In future, this will be applied to vectors component-wise. That is, for  .     It can be easily checked that    Now we set up layers of neurons. Each neuron computes a single real number and passes it to every neuron in the next layer. In turn, each new neuron performs its own weighted combination of these values, adds its own bias and applies the sigmoid function. This is illustrated by  Where and .   The next neuron outputs     General Setup  'Deep learning' refers to the use of hidden layers between the input and output layers. For a network of layers, are the respective input, output layers. Each layer contains neurons. Thus, the netwrok maps . Where For training datapoints,    "
 },
 {
   "id": "def-sigmoid",
@@ -178,7 +178,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "5.1.1",
   "title": "",
-  "body": "  The sigmoid function is a common activation function, given by    "
+  "body": "  A common activation function is the sigmoid function, given by for .  In future, this will be applied to vectors component-wise. That is, for  .   "
 },
 {
   "id": "remark-1",
@@ -190,13 +190,31 @@ var ptx_lunr_docs = [
   "body": " It can be easily checked that   "
 },
 {
+  "id": "remark-2",
+  "level": "2",
+  "url": "sec-ml-intro.html#remark-2",
+  "type": "Remark",
+  "number": "5.1.3",
+  "title": "",
+  "body": " The next neuron outputs   "
+},
+{
   "id": "sec-stochastic",
   "level": "1",
   "url": "sec-stochastic.html",
   "type": "Section",
   "number": "5.2",
-  "title": "**Stochastic Gradient",
-  "body": " **Stochastic Gradient  "
+  "title": "Stochastic Gradient",
+  "body": " Stochastic Gradient  Building a network corresponds to choosing parameters (of and ) that minimise the the cost function. Taking to be the number of parameters, we store these variables in a single vector .  By a taylor series expansion, we have Which motivates us to make as negative as possible. Cauchy-Schwarz tells us that , so this happens when . Thus, we choose and update accoringly: Iterating this update forms the basis of gradient descent, with as the learning rate.    "
+},
+{
+  "id": "remark-3",
+  "level": "2",
+  "url": "sec-stochastic.html#remark-3",
+  "type": "Remark",
+  "number": "5.2.1",
+  "title": "",
+  "body": " "
 },
 {
   "id": "sec-auto-diff",

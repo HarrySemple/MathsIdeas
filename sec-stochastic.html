@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>**Stochastic Gradient</title>
+<title>Stochastic Gradient</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -262,8 +262,11 @@ window.MathJax = {
 <li>
 <div class="toc-item"><a href="ch-ml.html" class="internal"><span class="codenumber">5</span> <span class="title">Deep Learning</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="sec-ml-intro.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Introduction</span></a></div></li>
-<li class="active"><div class="toc-item"><a href="sec-stochastic.html" class="internal"><span class="codenumber">5.2</span> <span class="title">**Stochastic Gradient</span></a></div></li>
+<li>
+<div class="toc-item"><a href="sec-ml-intro.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Introduction</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="sec-ml-intro.html#subsec-ml1" class="internal"><span class="codenumber">5.1.1</span> <span class="title">General Setup</span></a></div></li></ul>
+</li>
+<li class="active"><div class="toc-item"><a href="sec-stochastic.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Stochastic Gradient</span></a></div></li>
 <li><div class="toc-item"><a href="sec-auto-diff.html" class="internal"><span class="codenumber">5.3</span> <span class="title">**Automatic Differentiation</span></a></div></li>
 </ul>
 </li>
@@ -283,8 +286,29 @@ window.MathJax = {
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-stochastic"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">5.2</span> <span class="title">**Stochastic Gradient</span>
-</h2></section></div>
+<span class="type">Section</span> <span class="codenumber">5.2</span> <span class="title">Stochastic Gradient</span>
+</h2>
+<div class="para" id="p-17">Building a network corresponds to choosing parameters (of <span class="process-math">\(W^{[l]}\)</span> and <span class="process-math">\(b^{[l]}\)</span>) that minimise the the cost function. Taking <span class="process-math">\(s\)</span> to be the number of parameters, we store these variables in a single vector <span class="process-math">\(p\in\mathbb{R}^s\text{.}\)</span>
+</div>
+<div class="para logical" id="p-18">
+<div class="para">By a taylor series expansion, we have</div>
+<div class="displaymath process-math" id="md-8">
+\begin{align*}
+\text{Cost}(p+\Delta p) \amp\approx \text{Cost}(p)+\sum_{r=1}^s\frac{\partial\text{Cost}(p)}{\partial p_r}\Delta p_r \\
+\amp=\text{Cost}(p) + \nabla\text{Cost}(p)^T\Delta p 
+\end{align*}
+</div>
+<div class="para">Which motivates us to make <span class="process-math">\(\nabla\text{Cost}(p)^T\Delta p \)</span> as negative as possible. Cauchy-Schwarz tells us that <span class="process-math">\(|f^Tg|\leq||f||_2||g||_2\text{,}\)</span> so this happens when <span class="process-math">\(f^Tg = -||f||_2||g||_2 \iff f = -\lambda g\text{.}\)</span> Thus, we choose <span class="process-math">\(\Delta p = -\eta\nabla\text{Cost}(p)\)</span> and update accoringly:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+p\longrightarrow p-\eta\nabla\text{Cost}(p)
+\end{equation*}
+</div>
+<div class="para">Iterating this update forms the basis of gradient descent, with <span class="process-math">\(\eta\)</span> as the learning rate.</div>
+</div>
+<article class="remark remark-like" id="remark-3"><h3 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">5.2.1</span><span class="period">.</span>
+</h3></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-ml-intro.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec-auto-diff.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

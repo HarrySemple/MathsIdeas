@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<h3 class="heading"><span class="type">Paragraph</span></h3>
+<div class="para logical">
+<div class="para">By a taylor series expansion, we have</div>
+<div class="displaymath process-math">
+\begin{align*}
+\text{Cost}(p+\Delta p) \amp\approx \text{Cost}(p)+\sum_{r=1}^s\frac{\partial\text{Cost}(p)}{\partial p_r}\Delta p_r \\
+\amp=\text{Cost}(p) + \nabla\text{Cost}(p)^T\Delta p 
+\end{align*}
+</div>
+<div class="para">Which motivates us to make <span class="process-math">\(\nabla\text{Cost}(p)^T\Delta p \)</span> as negative as possible. Cauchy-Schwarz tells us that <span class="process-math">\(|f^Tg|\leq||f||_2||g||_2\text{,}\)</span> so this happens when <span class="process-math">\(f^Tg = -||f||_2||g||_2 \iff f = -\lambda g\text{.}\)</span> Thus, we choose <span class="process-math">\(\Delta p = -\eta\nabla\text{Cost}(p)\)</span> and update accoringly:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+p\longrightarrow p-\eta\nabla\text{Cost}(p)
+\end{equation*}
+</div>
+<div class="para">Iterating this update forms the basis of gradient descent, with <span class="process-math">\(\eta\)</span> as the learning rate.</div>
+</div>
+<span class="incontext"><a href="sec-stochastic.html#p-18" class="internal">in-context</a></span>
+</body>
+</html>

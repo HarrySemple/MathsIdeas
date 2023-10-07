@@ -16,8 +16,18 @@
 \Gamma(t+1)\amp=\int_0^\infty x^t e^{-x}\\
 \amp=\big[-x^t e^{-x}\big]_0^\infty+\int_0^\infty tx^{t-1}e^{-x}dx\\
 \amp=t\Gamma(t) \\
-\text{thus, we have that} \\
-\Rightarrow\Gamma(t)\amp=(t-1)\Gamma(t-1)=\cdots=(t-1)!\Gamma(1)
+\text{Thus, we have that}\\
+\Gamma(t)\amp=(t-1)\Gamma(t-1)=\cdots=(t-1)!\Gamma(1)\\
+\text{Where}\\
+\Gamma(1)\amp=\int_0^\infty x^0e^{-x}dx\\
+\amp=\big[-e^{-x}\big]_0^\infty=1 \\
+\amp \\
+\Rightarrow\Gamma(t)\amp=(t-1)!\\
+\amp \\
+\Rightarrow \big(-\frac{1}{2}\big)!\amp=\Gamma\big(\frac{1}{2}\big) \\
+\amp=\int_0^\infty x^{1/2}e^{-x}dx\\
+\amp=2\int_0^\infty e^{-x^2}dx\\
+\amp=\int_{-\infty}^\infty e^{-x^2}dx = \sqrt\pi
 \end{align*}
 </div>
 <span class="incontext"><a href="guass.html#md-1" class="internal">in-context</a></span>

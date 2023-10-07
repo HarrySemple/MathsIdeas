@@ -262,8 +262,11 @@ window.MathJax = {
 <li>
 <div class="toc-item"><a href="ch-ml.html" class="internal"><span class="codenumber">5</span> <span class="title">Deep Learning</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="sec-ml-intro.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Introduction</span></a></div></li>
-<li><div class="toc-item"><a href="sec-stochastic.html" class="internal"><span class="codenumber">5.2</span> <span class="title">**Stochastic Gradient</span></a></div></li>
+<li>
+<div class="toc-item"><a href="sec-ml-intro.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Introduction</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="sec-ml-intro.html#subsec-ml1" class="internal"><span class="codenumber">5.1.1</span> <span class="title">General Setup</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="sec-stochastic.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Stochastic Gradient</span></a></div></li>
 <li><div class="toc-item"><a href="sec-auto-diff.html" class="internal"><span class="codenumber">5.3</span> <span class="title">**Automatic Differentiation</span></a></div></li>
 </ul>
 </li>
@@ -305,12 +308,21 @@ window.MathJax = {
 \Gamma(t+1)\amp=\int_0^\infty x^t e^{-x}\\
 \amp=\big[-x^t e^{-x}\big]_0^\infty+\int_0^\infty tx^{t-1}e^{-x}dx\\
 \amp=t\Gamma(t) \\
-\text{thus, we have that} \\
-\Rightarrow\Gamma(t)\amp=(t-1)\Gamma(t-1)=\cdots=(t-1)!\Gamma(1)
+\text{Thus, we have that}\\
+\Gamma(t)\amp=(t-1)\Gamma(t-1)=\cdots=(t-1)!\Gamma(1)\\
+\text{Where}\\
+\Gamma(1)\amp=\int_0^\infty x^0e^{-x}dx\\
+\amp=\big[-e^{-x}\big]_0^\infty=1 \\
+\amp \\
+\Rightarrow\Gamma(t)\amp=(t-1)!\\
+\amp \\
+\Rightarrow \big(-\frac{1}{2}\big)!\amp=\Gamma\big(\frac{1}{2}\big) \\
+\amp=\int_0^\infty x^{1/2}e^{-x}dx\\
+\amp=2\int_0^\infty e^{-x^2}dx\\
+\amp=\int_{-\infty}^\infty e^{-x^2}dx = \sqrt\pi
 \end{align*}
 </div>
-</div></article></div>
-<div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/GI1.jpg" class="contained"></div></section></div>
+</div></article></div></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="normal-1.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="special-1.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

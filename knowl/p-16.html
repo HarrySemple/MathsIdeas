@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<h4 class="heading"><span class="type">Paragraph</span></h4>
+<div class="para logical">
+<div class="para">’Deep learning’ refers to the use of hidden layers between the input and output layers. For a network of <span class="process-math">\(L\)</span> layers, <span class="process-math">\(1\text{ and }L\)</span> are the respective input, output layers. Each layer <span class="process-math">\(l\in\{ 1, \dots, L\}\)</span> contains <span class="process-math">\(n_l\)</span> neurons. Thus, the netwrok maps <span class="process-math">\(\mathbb{R}^{n_1}\rightarrow\mathbb{R}^{n_L}\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+W^{[l]} \amp\in\mathbb{R}^{n_l\times n_{l-1}} \\
+a^{[l]},b^{[l]} \amp\in\mathbb{R}^{n_l} 
+\end{align*}
+</div>
+<div class="para">Where</div>
+<div class="displaymath process-math">
+\begin{align*}
+a^{[1]} \amp=x \\
+a^{[l]} \amp=\sigma(W^{[l]}a^{[l-1]} + b^{[l]}) 
+\end{align*}
+</div>
+<div class="para">For <span class="process-math">\(N\)</span> training datapoints,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Cost } = \frac{1}{N}\sum_{i=1}^N \frac{1}{2} ||y(x^{\{i\}})-a^{[L]}(x^{\{i\}})||_2^2
+\end{equation*}
+</div>
+</div>
+<span class="incontext"><a href="sec-ml-intro.html#p-16" class="internal">in-context</a></span>
+</body>
+</html>

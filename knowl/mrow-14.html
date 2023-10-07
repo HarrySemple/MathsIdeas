@@ -13,14 +13,23 @@
 <body class="ignore-math">
 <div class="displaymath process-math">
 \begin{align*}
-J_\text{adv}\amp=u(x,t)v(x,t) \\
-\text{i.e. particles @ }(x,t)\amp\text{ are moved along a vector }v\text{ due to some} \\
-\text{advection property in the}\amp\text{ system - such as active trasport within a cell} \\
+\Gamma(t+1)\amp=\int_0^\infty x^t e^{-x}\\
+\amp=\big[-x^t e^{-x}\big]_0^\infty+\int_0^\infty tx^{t-1}e^{-x}dx\\
+\amp=t\Gamma(t) \\
+\text{Thus, we have that}\\
+\Gamma(t)\amp=(t-1)\Gamma(t-1)=\cdots=(t-1)!\Gamma(1)\\
+\text{Where}\\
+\Gamma(1)\amp=\int_0^\infty x^0e^{-x}dx\\
+\amp=\big[-e^{-x}\big]_0^\infty=1 \\
 \amp \\
-J_\text{diff}\amp=-D\nabla u(x,t) \\
-\text{i.e. by Fick's Law, particles}\amp\text{ move down their concentration gradient}
+\Rightarrow\Gamma(t)\amp=(t-1)!\\
+\amp \\
+\Rightarrow \big(-\frac{1}{2}\big)!\amp=\Gamma\big(\frac{1}{2}\big) \\
+\amp=\int_0^\infty x^{1/2}e^{-x}dx\\
+\amp=2\int_0^\infty e^{-x^2}dx\\
+\amp=\int_{-\infty}^\infty e^{-x^2}dx = \sqrt\pi
 \end{align*}
 </div>
-<span class="incontext"><a href="math-bio-1.html#md-4" class="internal">in-context</a></span>
+<span class="incontext"><a href="guass.html#md-1" class="internal">in-context</a></span>
 </body>
 </html>
