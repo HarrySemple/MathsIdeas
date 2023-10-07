@@ -345,15 +345,16 @@
           <title>Stochastic Gradient</title>
           <statement>
             <p>
+            <!--
               <cd>
                 <cline>Set <m>p_0\in\mathbb{R}, k=0</m></cline>
                 <cline>For <m>\tau=0,\dots,n</m> [epochs] or <m>\text{Cost}(p_k)</m> no longer reduced</cline>
                 <cline><m>\cdots</m></cline>
               </cd>
+            -->
             </p>
           </statement>
         </algorithm>
-
       </section>
       <section xml:id="sec-auto-diff">
         <title>Automatic Differentiation</title>
