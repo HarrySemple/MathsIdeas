@@ -332,7 +332,7 @@
               Computing <m>\nabla\text{Cost}(p)</m> is expensive. 
               It is formulated as:
               <me>
-                \nabla\text{Cost}(p)=\frac{1}{N}\sum_{i=1}^N\nabla C_{x^\{i\}}(p)
+                \nabla\text{Cost}(p)=\frac{1}{N}\sum_{i=1}^N\nabla C_{x^{\{i\}}}(p)
               </me>
               Where 
               <me>
@@ -342,6 +342,7 @@
             </p>
         </remark>
         <algorithm xml:id="alg-sto-grad">
+          <title>Stochastic Gradient</title>
           <statement>
             <p>
               The Stochastic Gradient Algorithm
