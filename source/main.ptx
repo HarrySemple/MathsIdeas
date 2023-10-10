@@ -356,7 +356,17 @@
             </p>
             <li>
               <p>
-                <m>1+1=2</m>
+                Set <m>p_0\in\mathbb{R}, k=0</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                For <m>\tau=0,\dots,n</m> [epochs] or <m>\text{Cost}(p_k)</m> no longer reduced
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\;\cdots</m>
               </p>
             </li>
           </statement>
