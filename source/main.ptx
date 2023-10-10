@@ -344,7 +344,6 @@
         <algorithm xml:id="alg-sto-grad">
           <title>Stochastic Gradient</title>
           <statement>
-            <p>
             <!--
               <cd>
                 <cline>Set <m>p_0\in\mathbb{R}, k=0</m></cline>
@@ -352,7 +351,11 @@
                 <cline><m>\cdots</m></cline>
               </cd>
             -->
-            </p>
+            <li>
+              <p>
+                <m>1+1=2</m>
+              </p>
+            </li>
           </statement>
         </algorithm>
       </section>
@@ -361,23 +364,15 @@
         <p>
           Now we focus on computing partials of the cost function.
           We fix <m>x^{\{i\}}</m> and treat <m>C</m> as a function of weights and biases.
-        </p>
-        <definition xml:id="def-ad1">
-          <statement>
-            <p>
-              <md>
-                <mrow>C =\amp ||y-a^{[L]}||_2^2</mrow>
-                <mrow>z^{[l]}:=\amp W^{[l]}a^{[l-1]}+b^{[l]}</mrow>
-                <mrow>\delta^{[l]}\in\amp\mathbb{R}\text{ s.t. }\delta_j^{[l]}=\frac{\partial C}{\partial z_j^{[l]}}</mrow>
-              </md>
-            </p>
-          </statement>
-        </definition>
-        <p>
-          Thus, <m>a^{[l]}=\sigma(z^{[l]})</m> and <m>z^{[l]}</m> 
+          <md>
+            <mrow>C =\amp ||y-a^{[L]}||_2^2</mrow>
+            <mrow>z^{[l]}:=\amp W^{[l]}a^{[l-1]}+b^{[l]}</mrow>
+            <mrow>\delta^{[l]}\in\amp\mathbb{R}\text{ s.t. }\delta_j^{[l]}=\frac{\partial C}{\partial z_j^{[l]}}</mrow>
+          </md>
+          Thus, <m>a^{[l]}=\sigma(z^{[l]})</m> and <m>z_j^{[l]}</m> 
           is thought of as the weighed input of neuron <m>j</m> in layer <m>l</m> 
         </p>
-        <lemma xml:id="lem-ad2">
+        <lemma xml:id="lem-ad1">
           <statement>
             <p>
               We have the following results:
