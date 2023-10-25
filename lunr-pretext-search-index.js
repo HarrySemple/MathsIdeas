@@ -232,7 +232,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.3",
   "title": "Automatic Differentiation",
-  "body": " Automatic Differentiation  Now we focus on computing partials of the cost function. We fix and treat as a function of weights and biases. Thus, and is thought of as the weighed input of neuron in layer     We have the following results:     "
+  "body": " Automatic Differentiation  Now we focus on computing partials of the cost function. We fix and treat as a function of weights and biases. Thus, is thought of as the weighted input of neuron in layer and .    We have the following results:                              "
 },
 {
   "id": "lem-ad1",
@@ -241,7 +241,16 @@ var ptx_lunr_docs = [
   "type": "Lemma",
   "number": "5.3.1",
   "title": "",
-  "body": "  We have the following results:    "
+  "body": "  We have the following results:                         "
+},
+{
+  "id": "proof-2",
+  "level": "2",
+  "url": "sec-auto-diff.html#proof-2",
+  "type": "Proof",
+  "number": "5.3.1",
+  "title": "",
+  "body": "   "
 },
 {
   "id": "subsec-Natural-Logorithm",
