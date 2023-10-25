@@ -158,8 +158,9 @@
           <title>Linear Systems of ODEs</title>
           <p>
             In general, a linear system of ODEs
-            <m>\displaystyle{\frac{\mathrm{d}\bar{x}}{\mathrm{d}t} = a_{11} \bar{x} + a_{12} \bar{y} +b_1,} ~&~ \displaystyle{\frac{\mathrm{d}\bar{y}}{\mathrm{d}t} = a_{21} \bar{x} + a_{22} \bar{y}+b_2.} \end{array}</m>
-        </subsection>
+            <md>\frac{\mathrm{d}\bar{x}}{\mathrm{d}t} = a_{11} \bar{x} + a_{12} \bar{y} +b_1,} ~&~ \displaystyle{\frac{\mathrm{d}\bar{y}}{\mathrm{d}t} = a_{21} \bar{x} + a_{22} \bar{y}+b_2.</md>
+            
+          </subsection>
       </section>
       <section xml:id="sec-mat">
         <title>**Special Matrices</title>
