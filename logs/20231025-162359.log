@@ -1,0 +1,21 @@
+INFO    : PreTeXt project found in `/workspaces/MathsIdeas`.
+INFO    : Preparing to build into /workspaces/MathsIdeas/output/web.
+INFO    : discovering source file's directory name: /workspaces/MathsIdeas/source
+INFO    : verifying and expanding input directory: /workspaces/MathsIdeas/source/../generated-assets
+INFO    : input directory expanded to absolute path: /workspaces/MathsIdeas/generated-assets
+INFO    : verifying and expanding input directory: /workspaces/MathsIdeas/source/../assets
+INFO    : input directory expanded to absolute path: /workspaces/MathsIdeas/assets
+INFO    : Runestone Services (via PreTeXt repository): version 7.1.2
+INFO    : Runestone Services (using newer, via online CDN query): version 7.2.0
+INFO    : converting /workspaces/MathsIdeas/source/main.ptx to HTML in /tmp/tmp4k7ef5ap
+INFO    : XSL conversion of /workspaces/MathsIdeas/source/main.ptx by /root/.ptx/xsl/pretext-html.xsl
+INFO    : comprehensive messages, warnings, and errors:
+INFO    :     * PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
+INFO    :     *              located within: "sec-ml-intro" (xml:id), "Introduction" (title)
+INFO    :     * PTX:DEPRECATE: (2016-05-23) <br> can no longer be used to create multiline output; you may use <line> elements in select situations (1 time)
+INFO    :     *              located within: "alg-sto-grad" (xml:id), "Stochastic Gradient" (title)
+INFO    :     * --------------
+INFO    : successful application of /root/.ptx/xsl/pretext-html.xsl
+INFO    : 
+Success! Run `pretext view` to see the results.
+
