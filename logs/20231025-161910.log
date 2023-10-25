@@ -1,0 +1,9 @@
+INFO    : PreTeXt project found in `/workspaces/MathsIdeas`.
+INFO    : Since no target was supplied, we will use "web".
+
+ERROR   : XML Syntax Error caused build to fail:
+ERROR   : /workspaces/MathsIdeas/source/main.ptx:161:98:FATAL:PARSER:ERR_NAME_REQUIRED: xmlParseEntityRef: no name
+CRITICAL: XML syntax for source file is invalid
+INFO    : ------------------------
+INFO    : While running pretext, the following errors occurred:
+

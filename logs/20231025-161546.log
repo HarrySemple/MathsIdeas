@@ -1,0 +1,17 @@
+INFO    : PreTeXt project found in `/workspaces/MathsIdeas`.
+INFO    : Since no target was supplied, we will use "web".
+
+ERROR   : XML Syntax Error caused build to fail:
+ERROR   : /workspaces/MathsIdeas/source/main.ptx:161:98:FATAL:PARSER:ERR_NAME_REQUIRED: xmlParseEntityRef: no name
+/workspaces/MathsIdeas/source/main.ptx:369:17:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: br line 368 and p
+/workspaces/MathsIdeas/source/main.ptx:385:23:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: br line 366 and statement
+/workspaces/MathsIdeas/source/main.ptx:386:21:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: p line 365 and algorithm
+/workspaces/MathsIdeas/source/main.ptx:387:17:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: statement line 357 and section
+/workspaces/MathsIdeas/source/main.ptx:436:15:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: algorithm line 355 and chapter
+/workspaces/MathsIdeas/source/main.ptx:480:10:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: section line 320 and book
+/workspaces/MathsIdeas/source/main.ptx:481:11:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: chapter line 257 and pretext
+/workspaces/MathsIdeas/source/main.ptx:482:1:FATAL:PARSER:ERR_TAG_NOT_FINISHED: Premature end of data in tag book line 15
+CRITICAL: XML syntax for source file is invalid
+INFO    : ------------------------
+INFO    : While running pretext, the following errors occurred:
+

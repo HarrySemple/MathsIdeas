@@ -154,11 +154,11 @@
             </p>
           </statement>
         </definition>
-        <subsection>
+        <subsection xml:id="subsec-odes">
           <title>Linear Systems of ODEs</title>
           <p>
             In general, a linear system of ODEs
-            <md>\frac{\mathrm{d}\bar{x}}{\mathrm{d}t} = a_{11} \bar{x} + a_{12} \bar{y} +b_1,} ~&~ \displaystyle{\frac{\mathrm{d}\bar{y}}{\mathrm{d}t} = a_{21} \bar{x} + a_{22} \bar{y}+b_2.</md>
+            <md>\displaystyle{\frac{\mathrm{d}\bar{x}}{\mathrm{d}t} = a_{11} \bar{x} + a_{12} \bar{y} +b_1,} \displaystyle{\frac{\mathrm{d}\bar{y}}{\mathrm{d}t} = a_{21} \bar{x} + a_{22} \bar{y}+b_2.}</md>
           </p> 
           </subsection>
       </section>
@@ -365,7 +365,7 @@
             <p>
               <br>
               Set <m>p_0\in\mathbb{R}, k=0</m>
-              <br>
+              </br>
             </p>
             <li>
               <p>
