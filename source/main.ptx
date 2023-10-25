@@ -142,7 +142,7 @@
     <chapter xml:id="ch-lin-alg">
       <title>Linear Algebra and ODE's</title>
       <section xml:id="sec-eig">
-        <title>Eigenvalues and Eigenvectors</title>
+        <title>Eigenvalues, Eigenvectors and Eigenfunctions</title>
         <definition xml:id="def-eigenvalue">
           <statement>
             <p>
@@ -154,10 +154,20 @@
             </p>
           </statement>
         </definition>
+        <subsection>
+          <title>Linear Systems of ODEs</title>
+          <p>
+            In general, a linear system of ODEs
+            <m>\displaystyle{\frac{\mathrm{d}\bar{x}}{\mathrm{d}t} = a_{11} \bar{x} + a_{12} \bar{y} +b_1,} ~&~ \displaystyle{\frac{\mathrm{d}\bar{y}}{\mathrm{d}t} = a_{21} \bar{x} + a_{22} \bar{y}+b_2.} \end{array}</m>
+        </subsection>
       </section>
-      <section xml:id="sec-Eigenfunctions">
-        <title>**Eigenfunctions</title>
-        
+      <section xml:id="sec-mat">
+        <title>**Special Matrices</title>
+        <!--Orthogonal, Symmeteric, Skew-Symmetric-->
+      </section>
+      <section>
+        <title>**Factorisations</title>
+        <!-- LU decomp, RU/VR decomp, QR fact-->
       </section>
     </chapter>
 
@@ -352,7 +362,9 @@
               </cd>
             -->
             <p>
-              
+              <br>
+              Set <m>p_0\in\mathbb{R}, k=0</m>
+              <br>
             </p>
             <li>
               <p>
@@ -382,19 +394,43 @@
             <mrow>z^{[l]}:=\amp W^{[l]}a^{[l-1]}+b^{[l]}</mrow>
             <mrow>\delta^{[l]}\in\amp\mathbb{R}\text{ s.t. }\delta_j^{[l]}=\frac{\partial C}{\partial z_j^{[l]}}</mrow>
           </md>
-          Thus, <m>a^{[l]}=\sigma(z^{[l]})</m> and <m>z_j^{[l]}</m> 
-          is thought of as the weighed input of neuron <m>j</m> in layer <m>l</m> 
+          Thus, <m>z_j^{[l]}</m> is thought of as the weighted input of neuron <m>j</m> in layer <m>l</m> 
+          and <m>a^{[l]}=\sigma(z^{[l]})</m>.
         </p>
         <lemma xml:id="lem-ad1">
           <statement>
             <p>
               We have the following results:
-              <mdn>
-                <mrow> \amp </mrow>
-              </mdn>
+              <ol>
+                <li>
+                  <p>
+                    <m>\delta^{[L]}= \sigma'(z^{[L]})\circ(a^{[L]}-y)</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>\delta^{[l]}= \sigma'(z^{[l]})\circ(W^{[l+1]})^T\delta^{[l+1]}</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>\frac{\partial C}{\partial b_j^{[l]}}=\delta_j^{[l]}</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>\frac{\partial C}{\partial w_{jk}^{[l]}}=\delta_j^{[l]}a_k^{[l-1]}</m>
+                  </p>
+                </li>
+              </ol>
             </p>
           </statement>
         </lemma>
+        <proof>
+          <p>
+            easy peasy 
+          </p>
+        </proof>
       </section>
     </chapter>
 
